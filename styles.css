@@ -1,0 +1,128 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #F0F0F0;
+}
+
+.container {
+    margin: auto;
+    width: 80%;
+    height: 400px;
+    background-color: #FFF;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.btn-container {
+    margin: auto;
+    width: 80%;
+    height: 400px;
+    background-color: #FFF;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+h1 {
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+img {
+    width: 400px;
+    height: 300px;
+    cursor: pointer;
+    margin-top: 100px;
+    transition: transform 0.2s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+#progress {
+    width: 80%;
+    height: 24px;
+    background-color: #EEE;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+#bar {
+    height: 100%;
+    background-color: #4CAF50;
+    color: #FFF;
+    text-align: center;
+    line-height: 24px;
+    font-size: 14px;
+    width: 0%;
+    transition: width 0.2s ease-in-out;
+}
+
+#count-label {
+    font-size: 24px;
+    margin-top: 10px;
+    color: #888;
+}
+
+#background-img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    filter: blur(4px) brightness(0.7);
+}
+
+#btn-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 600px;
+}
+
+.btn {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #3E8E41;
+}
+
+@media only screen and (max-width: 600px) {
+    h1, #progress, #count-label {
+        font-size: 24px;
+    }
+
+    img {
+        width: 120px;
+        height: 120px;
+        margin-top: 30px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+}
