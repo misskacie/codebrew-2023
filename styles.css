@@ -42,6 +42,7 @@ h1 {
 img {
     width: 800px;
     height: 600px;
+    padding: 50px;
     cursor: url("Images/handcursor.png"), auto;
     transition: transform 0.2s ease-in-out;
 }
