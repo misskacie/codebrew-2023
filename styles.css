@@ -40,16 +40,13 @@ h1 {
 }
 
 img {
-    width: 400px;
-    height: 300px;
-    cursor: pointer;
-    margin-top: 100px;
+    width: 800px;
+    height: 600px;
+    cursor: url("Images/handcursor.png"), auto;
     transition: transform 0.2s ease-in-out;
 }
 
-img:hover {
-    transform: scale(1.1);
-}
+
 
 #progress {
     width: 80%;
