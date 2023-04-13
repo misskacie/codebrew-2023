@@ -11,13 +11,13 @@ if (counter < 100) {
 }
 
 function goToTodoList() {
-    window.location.href = "todolist.html";
+    window.location.href = "todolist";
 }
 
 function goToFeedTheCat() {
-    window.location.href = "feedthecat.html";
+    window.location.href = "feedthecat";
 }
 
 function goToBirdWatching() {
-    window.location.href = "birdwatching.html";
+    window.location.href = "birdwatching";
 }
