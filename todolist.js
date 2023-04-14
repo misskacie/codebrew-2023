@@ -1,35 +1,25 @@
-//adding tasks
-function addTask() {
-    var task = document.createElement("p");
-    var inputValue = document.getElementById("new-task").value;
-    var t = document.createTextNode(inputValue);
-    let txt = document.createElement("span");
-    let box = document.createElement("span");
-    box.textContent = " x ";
-    task.classList.add("todo-item");
-    box.classList.add("box","unchecked");
-    txt.classList.add("todo","unchecked");
-    task.appendChild(box);
-    txt.appendChild(t);
-    task.appendChild(txt);
-    document.getElementById("todo-list").appendChild(task);
-    document.getElementById("new-task").value = "";
-}
-
-//checking off items
-var list = document.getElementById('todo-list');
-list.addEventListener('click', function(ev) {
-    console.log(ev.target.classList);
-    if (ev.target.classList[0] == "box") {
-        ev.target.classList.toggle('checked');
-        ev.target.classList.toggle("unchecked");
-        console.log(ev.target.parentElement.lastElementChild.classList);
-        ev.target.parentElement.lastElementChild.classList.toggle("checked");
-        ev.target.parentElement.lastElementChild.classList.toggle("unchecked");
-        console.log(ev.target.parentElement.lastElementChild.classList);
-        console.log(ev.target.parentElement.lastElementChild.lastElementChild);
+document.querySelector('#push').onclick = function(){
+    if(document.querySelector('#newtask input').value.length == 0){
+        alert("Kindly Enter Task Name!!!!")
     }
-}, false);
 
+    else{
+        document.querySelector('#tasks').innerHTML += `
+            <div class="task">
+                <span id="taskname">
+                    ${document.querySelector('#newtask input').value}
+                </span>
+                <button class="delete">
+                    <i class="far fa-trash-alt"></i>
+                </button>
+            </div>
+        `;
 
-//animate task disappearing after complete
+        var current_tasks = document.querySelectorAll(".delete");
+        for(var i=0; i<current_tasks.length; i++){
+            current_tasks[i].onclick = function(){
+                this.parentNode.remove();
+            }
+        }
+    }
+}
