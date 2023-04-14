@@ -5,6 +5,7 @@
     --light-gray: #e8d8f2;
     --very-light-gray: #eee4f5;
     --white: white;
+    --bar: #BE6DB7;
 }
 body {
     font-family: 'Sniglet', sans-serif;
@@ -123,7 +124,7 @@ img {
 
 #bar {
     height: 100%;
-    background-color: var(--light-main);
+    background-color: var(--bar);
     color: var(--dark-gray);
     text-align: left;
     line-height: 42px;
