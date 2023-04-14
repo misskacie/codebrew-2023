@@ -4,7 +4,6 @@
     --dark-gray: #333333;
     --light-gray: #e8d8f2;
     --very-light-gray: #eee4f5;
-    --white: white;
 }
 body {
     font-family: 'Sniglet', sans-serif;
@@ -169,14 +168,17 @@ img {
 
 
 .btn {
+    font-family: "Sniglet", sans-serif;
+    font-weight: bold;
+    outline: 2px solid var(--dark-main);
     width: 200px;
     height: 75px;
-    font-size: 22px;
-    margin-right: 20px;
-    margin-left: 20px;
-    padding: 10px 20px;
-    background-color: var(--dark-main);
-    color: var(--light-gray);
+    font-size: 24px;
+    margin-right: 16px;
+    margin-left: 16px;
+    padding: 8px 16px;
+    background-color: var(--light-main);
+    color: var(--dark-main);
     border: 10px;
     border-radius: 12px;
     cursor: pointer;
@@ -184,8 +186,10 @@ img {
 }
 
 .btn:hover {
-    background-color: var(--light-main);
-    color: var(--dark-gray);
+    background-color: var(--dark-gray);
+    outline-color: var(--light-main);
+    color: var(--light-main);
+    text-shadow: 2px 2px var(--dark-main);
 }
 
 @media only screen and (max-width: 600px) {
