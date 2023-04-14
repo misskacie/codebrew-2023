@@ -235,7 +235,7 @@ img {
     position: relative;
     border-radius: 5px;
     font-family: 'Sniglet',sans-serif;
-    font-size: 15px;
+    font-size: 26px;
     border: 2px solid var(--light-main);
     background-color: var(--very-light-gray);
 }
@@ -248,7 +248,7 @@ img {
     position: relative;
     float: right;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 26px;
     background-color: var(--dark-main);
     border: none;
     color: var(--light-gray);
@@ -282,7 +282,7 @@ img {
 }
 .task span{
     font-family: 'Sniglet',sans-serif;
-    font-size: 15px;
+    font-size: 26px;
     font-weight: 400;
 }
 .task button{
@@ -294,4 +294,5 @@ img {
     height: 100%;
     width: 40px;
     border-radius: 5px;
+    font-size: 20px;
 }
