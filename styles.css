@@ -3,6 +3,7 @@
     --light-main: #cbb1db;
     --dark-gray: #333333;
     --light-gray: #e8d8f2;
+    --very-light-gray: #eee4f5;
     --white: white;
 }
 body {
@@ -82,31 +83,55 @@ img {
     /* transition: transform 0.2s ease-in-out; */
 }
 
+.happy-bar {
+    background-color: var(--dark-main);
+    width: 90%;
+    padding: 12px;
+    height: 72px;
+    position: fixed;
+    text-align: center;
+    border-radius: 12px;
+    left: 5%;
+    top: 24px;
+    z-index: 1;
+}
 
 
+#count-label {
+    font-size: 24px;
+    line-height: 32px;
+    height: 48px;
+    padding: 8px;
+    padding-right: 24px;
+    color: var(--light-gray);
+    text-align: right;
+    width: 20%;
+    float:left;
+    display: block;
+}
 
 #progress {
-
-    width: 50%;
-    height: 42px;
+    width: 80%;
+    float: left;
+    height: 48px;
     background-color: var(--light-gray);
     border-radius: 12px;
     overflow: hidden;
-    margin-top: 50px;
     text-align: center;
+    display: block;
 }
 
 #bar {
     height: 100%;
-    background-color: var(--dark-main);
-    color: var(--light-gray);
-    text-align: right;
-    line-height: 24px;
-    font-size: 24px;
+    background-color: var(--light-main);
+    color: var(--dark-gray);
+    text-align: left;
+    line-height: 42px;
+    font-size: 42px;
     width: 0%;
     transition: width 0.2s ease-in-out;
-    text-align: center;
 }
+
 
 #foodprogress {
     width: 50%;
@@ -130,12 +155,7 @@ img {
     text-align: center;
 }
 
-#count-label {
-    font-size: 32px;
-    margin-top: 10px;
-    color: var(--dark-gray);
-    text-align: center;
-}
+
 
 #background-img {
     position: absolute;
