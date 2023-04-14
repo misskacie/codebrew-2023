@@ -16,6 +16,7 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
+    cursor: url("Images/handcursor.png"), auto;
 }
 .btn-container {
     margin: auto;
