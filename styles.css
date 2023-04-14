@@ -178,7 +178,7 @@ img {
     font-weight: 500;
     position: relative;
     border-radius: 5px;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Sniglet',sans-serif;
     font-size: 15px;
     border: 2px solid var(--light-main);
     background-color: var(--very-light-gray);
@@ -201,7 +201,7 @@ img {
     width: 20%;
     height: 45px;
     border-radius: 5px;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Sniglet',sans-serif;
 }
 #tasks{
     border-radius: 10px;
@@ -225,7 +225,7 @@ img {
     display: flex;
 }
 .task span{
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Sniglet',sans-serif;
     font-size: 15px;
     font-weight: 400;
 }
