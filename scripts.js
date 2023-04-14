@@ -28,3 +28,6 @@ function goToFeedTheCat() {
 function goToBirdWatching() {
     window.location.href = "birdwatching.html";
 }
+function goToPetTheCat() {
+    window.location.href = "index.html";
+}

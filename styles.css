@@ -2,6 +2,9 @@ body {
     font-family: 'Segoe UI', sans-serif;
     background-color: #01a3a4;
 }
+.watchingcat{
+    margin-left: "1000px";
+}
 
 .container {
     margin: auto;
@@ -16,7 +19,7 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    cursor: url("Images/handcursor.png"), auto;
+    cursor: url("Assets/handcursor.png"), auto;
 }
 .btn-container {
     margin: auto;
@@ -41,11 +44,10 @@ h1 {
 }
 
 img {
-    width: 800px;
-    height: 600px;
     padding: 50px;
-    cursor: url("Images/handcursor.png"), auto;
-    transition: transform 0.2s ease-in-out;
+    cursor: url("Assets/handcursor.png"), auto;
+    transform: scale(1.5)
+    /* transition: transform 0.2s ease-in-out; */
 }
 
 
