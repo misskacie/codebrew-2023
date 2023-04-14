@@ -1,4 +1,4 @@
-//adding task
+//adding tasks
 function addTask() {
     var task = document.createElement("p");
     var inputValue = document.getElementById("new-task").value;
@@ -12,7 +12,7 @@ function addTask() {
     task.appendChild(box);
     txt.appendChild(t);
     task.appendChild(txt);
-   document.getElementById("todo-list").appendChild(task);
+    document.getElementById("todo-list").appendChild(task);
     document.getElementById("new-task").value = "";
 }
 
@@ -30,3 +30,6 @@ list.addEventListener('click', function(ev) {
         console.log(ev.target.parentElement.lastElementChild.lastElementChild);
     }
 }, false);
+
+
+//animate task disappearing after complete
