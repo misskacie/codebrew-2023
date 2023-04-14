@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FelineWellness</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /*ul li:before {
+            content:url(Images/uncheckedBox.svg)
+        }
+        ul li.checked {
+            text-decoration: line-through;
+        }
+        ul li.checked::before {
+            content:url(Images/checkedBox.svg);
+            width: 20px;
+        }*/
+        .box:hover {
+            color: #cbb1db;
+        }
+        .box {
+            width: 16px;
+            line-height: 12px;
+            height: 16px;
+            padding: 2px;
+            border: 2px solid black;
+            text-align: center;
+            font-size: 16px;
+            float: left;
+        }
+        .box.unchecked {
+            color: rgba(0,0,0,0);
+        }
+        .box.checked {
+            color: black;
+        }
+        .todo {
+            float: left;
+        }
+        .todo.unchecked {
+            text-decoration: none;
+        }
+        .todo.checked {
+            text-decoration: line-through;
+        }
+        .todo-item {
+            width: 100%;
+            height: 32px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="todo-list">
+        <p class="todo-item"><span class="box unchecked"> x </span><span class="todo unchecked"> pet the cat </span></p>
+        <!--<p class="todo-item"><p class="box unchecked"> x </p><p class="todo unchecked">pet the cat</p></p>
+        <p class="todo-item"><p class="box unchecked"> x </p><p class="todo unchecked">pet the cat</p></p>
+        <p><span class="box checked"> x </span><span class="todo checked">pet the cat</span></p>-->
+    </div>
+    <input type="text" id="new-task" placeholder="Add a new task" />
+    <button type="submit" id="new-task-button" onclick="addTask()">+ </button>
+	<div class="btn-container">
+		<button class="btn" onclick="goToTodoList()">To-Do List</button>
+		<button class="btn" onclick="goToFeedTheCat()">Feed the Cat</button>
+		<button class="btn" onclick="goToBirdWatching()">Bird Watching</button>
+	</div>
+
+    <script src="myscripts.js" type="text/javascript"></script>
+    <script src="todolist.js"></script>
+</body>
+</html>
