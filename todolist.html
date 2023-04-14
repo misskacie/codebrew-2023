@@ -5,16 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <style>
-        /*ul li:before {
-            content:url(Images/uncheckedBox.svg)
-        }
-        ul li.checked {
-            text-decoration: line-through;
-        }
-        ul li.checked::before {
-            content:url(Images/checkedBox.svg);
-            width: 20px;
-        }*/
         .box:hover {
             color: #cbb1db;
         }
@@ -53,9 +43,6 @@
 <body>
     <div id="todo-list">
         <p class="todo-item"><span class="box unchecked"> x </span><span class="todo unchecked"> pet the cat </span></p>
-        <!--<p class="todo-item"><p class="box unchecked"> x </p><p class="todo unchecked">pet the cat</p></p>
-        <p class="todo-item"><p class="box unchecked"> x </p><p class="todo unchecked">pet the cat</p></p>
-        <p><span class="box checked"> x </span><span class="todo checked">pet the cat</span></p>-->
     </div>
     <input type="text" id="new-task" placeholder="Add a new task" />
     <button type="submit" id="new-task-button" onclick="addTask()">+ </button>
