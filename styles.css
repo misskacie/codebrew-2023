@@ -53,7 +53,9 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    position: relative;
+    position: fixed;
+    bottom:0;
+    left:0;
     margin-top: 30px;
     /*justify-content: space-around;
     max-width: 600px;*/
