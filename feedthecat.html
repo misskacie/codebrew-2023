@@ -3,14 +3,15 @@
 <head>
 	<title>Feed the Cat</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="/Assets/favicon.ico">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 	
-	<div id="progress">
-		<div id="bar">0%</div>
-	</div>
 	<div id="count-label">Happiness Percentage</div>
+		<div id="progress">
+			<div id="bar" >0%</div>
+		</div>
 
 	<div class="container" style="background-image: url('Assets/pexels-digital-buggu.jpg'); 
 	background-size: cover; height:1000px; padding-top: 10px;">
@@ -20,9 +21,9 @@
 
 	</div>
 	<div class="btn-container">
-		<button class="btn" onclick="goToTodoList()">To-Do List</button>
-		<button class="btn">Feed the Cat</button>
 		<button class="btn" onclick="goToPetTheCat()">Pet The Cat</button>
+		<button class="btn">Feed the Cat</button>
+		<button class="btn" onclick="goToTodoList()">To-Do List</button>
 		<button class="btn" onclick="goToBirdWatching()">Bird Watching</button>
 	</div>
     <script src="scripts.js" type="text/javascript">
