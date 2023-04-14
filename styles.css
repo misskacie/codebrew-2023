@@ -13,6 +13,13 @@ body {
 .video{
     text-align: center;
 }
+
+.center{
+    text-align: center;
+}
+.rightalign{
+    text-align: right;
+}
 .watchingcat{
     text-align: center;
     margin: 0;
@@ -78,12 +85,14 @@ img {
 
 
 #progress {
-    width: 80%;
-    height: 24px;
+
+    width: 50%;
+    height: 42px;
     background-color: var(--light-gray);
     border-radius: 12px;
     overflow: hidden;
     margin-top: 50px;
+    text-align: center;
 }
 
 #bar {
@@ -92,15 +101,39 @@ img {
     color: var(--light-gray);
     text-align: right;
     line-height: 24px;
+    font-size: 24px;
+    width: 0%;
+    transition: width 0.2s ease-in-out;
+    text-align: center;
+}
+
+#foodprogress {
+    width: 50%;
+    height: 24px;
+    background-color: #EEE;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#foodbar {
+    height: 100%;
+    background-color: #01a3a4;
+    color: #FFF;
+    text-align: center;
+    line-height: 24px;
     font-size: 14px;
     width: 0%;
     transition: width 0.2s ease-in-out;
+    text-align: center;
 }
 
 #count-label {
     font-size: 32px;
     margin-top: 10px;
     color: var(--dark-gray);
+    text-align: center;
 }
 
 #background-img {
