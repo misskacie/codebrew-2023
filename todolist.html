@@ -5,18 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <style>
-        /*ul li:before {
-            content:url(Images/uncheckedBox.svg)
-        }
-        ul li.checked {
-            text-decoration: line-through;
-        }
-        ul li.checked::before {
-            content:url(Images/checkedBox.svg);
-            width: 20px;
-        }*/
-        .box:hover {
-            color: #cbb1db;
+        @keyframes clear-task {
+            from {display: block;}
+           to {
+               display: none; 
+           }
         }
         .box {
             width: 16px;
@@ -27,15 +20,24 @@
             text-align: center;
             font-size: 16px;
             float: left;
+            display: block;
+            margin: auto;
         }
         .box.unchecked {
             color: rgba(0,0,0,0);
         }
         .box.checked {
-            color: black;
+            animation-name: clear-task;
+            animation-duration: 4s;
+            animation-delay: 2s;
         }
         .todo {
             float: left;
+            display: block;
+            width: 95%;
+            line-height: 16px;
+            padding: 8px;
+            vertical-align: middle;
         }
         .todo.unchecked {
             text-decoration: none;
@@ -46,16 +48,14 @@
         .todo-item {
             width: 100%;
             height: 32px;
-            display: block;
+            display: flex;
+            column-gap: 32px;
         }
     </style>
 </head>
 <body>
     <div id="todo-list">
         <p class="todo-item"><span class="box unchecked"> x </span><span class="todo unchecked"> pet the cat </span></p>
-        <!--<p class="todo-item"><p class="box unchecked"> x </p><p class="todo unchecked">pet the cat</p></p>
-        <p class="todo-item"><p class="box unchecked"> x </p><p class="todo unchecked">pet the cat</p></p>
-        <p><span class="box checked"> x </span><span class="todo checked">pet the cat</span></p>-->
     </div>
     <input type="text" id="new-task" placeholder="Add a new task" />
     <button type="submit" id="new-task-button" onclick="addTask()">+ </button>
